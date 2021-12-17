@@ -47,5 +47,9 @@ namespace Vehicles.API.Data.Entities
 
         [Display(Name = "Usuario")]
         public string FullName => $"{FirstName} {LastName}";
+
+
+        //Relación a tabla
+        public ICollection<Vehicle> Vehicles { get; set; }
     }
 }
